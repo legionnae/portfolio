@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import TypeWritter from "typewriter-effect";
 import { motion } from "framer-motion";
@@ -32,13 +33,19 @@ const HeroSection = () => {
                 }}
                 onInit={(typewriter) => {
                   typewriter
-                    .typeString(`<span style="color:#FF77FF">Web 3 Developer</span>`)
+                    .typeString(
+                      `<span style="color:#FF77FF">Web 3 Developer</span>`
+                    )
                     .pauseFor(1500)
                     .deleteAll()
-                    .typeString(`<span style="color:#9E7BFF">Crypto Trader</span>`)
+                    .typeString(
+                      `<span style="color:#9E7BFF">Crypto Trader</span>`
+                    )
                     .pauseFor(1500)
                     .deleteAll()
-                    .typeString(`<span style="color:#893BFF">Front-End Developer</span>`)
+                    .typeString(
+                      `<span style="color:#893BFF">Front-End Developer</span>`
+                    )
                     .pauseFor(1500)
                     .deleteAll()
                     .start();
@@ -71,7 +78,7 @@ const HeroSection = () => {
           >
             <div className="w-[400px] h-[400px] relative z-0">
               {/* Use next/image component for optimization */}
-              <Image
+              <img
                 src="/Hero-Section.png"
                 alt="hero section"
                 className=" transform rounded-full flex relative -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
